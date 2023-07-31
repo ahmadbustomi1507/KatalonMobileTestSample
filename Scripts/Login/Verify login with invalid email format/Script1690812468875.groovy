@@ -28,7 +28,7 @@ Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (3
 
 Mobile.getText(findTestObject('Object Repository/android.widget.LinearLayout'), 0)
 
-WebUI.verifyElementText(findTestObject(''), 'Enter a valid email address')
+WebUI.verifyTextPresent('Enter a valid email address', false)
 
 Mobile.closeApplication()
 

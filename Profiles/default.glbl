@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>app path relative</description>
-      <initValue>'app\\WordPress – Website Builder_22.7_Apkpure.apk'</initValue>
+      <initValue>'\\app\\WordPress – Website Builder_22.7_Apkpure.apk'</initValue>
       <name>appPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
