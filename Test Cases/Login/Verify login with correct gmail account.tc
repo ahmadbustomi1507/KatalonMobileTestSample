@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify login with correct gmail account</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3779846b-cb0e-4424-a153-475ebd9d7ab2</testCaseGuid>
+</TestCaseEntity>

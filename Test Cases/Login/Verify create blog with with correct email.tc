@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify create blog with with correct email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9bc3018d-cd69-42f9-80f1-b76e9d9e88c5</testCaseGuid>
+</TestCaseEntity>

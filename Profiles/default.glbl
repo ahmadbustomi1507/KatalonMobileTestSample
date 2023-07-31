@@ -4,4 +4,19 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>username for wordpress</description>
+      <initValue>'bustomia'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description> password for wordpress</description>
+      <initValue>'Tu4nt0m1'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>app path relative</description>
+      <initValue>'app\\WordPress – Website Builder_22.7_Apkpure.apk'</initValue>
+      <name>appPath</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
