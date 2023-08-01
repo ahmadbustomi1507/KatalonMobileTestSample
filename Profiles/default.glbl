@@ -19,4 +19,14 @@
       <initValue>'\\app\\WordPress – Website Builder_22.7_Apkpure.apk'</initValue>
       <name>appPath</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'abustomi1507@gmail.com'</initValue>
+      <name>email_1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'tomiAutomation.com'</initValue>
+      <name>sampleBlogAddress</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

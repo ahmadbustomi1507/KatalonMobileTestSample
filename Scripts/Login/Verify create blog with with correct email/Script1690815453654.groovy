@@ -17,16 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Tomi\\IntelliJIDEAProjects\\MyApplication\\output\\WordPress – Website Builder_22.7_Apkpure.apk', 
-    true)
+Mobile.startApplication(RunConfiguration.getProjectDir() + GlobalVariable.appPath, true)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Log in or sign up with WordPress.com'), 0)
 
-Mobile.setText(findTestObject('android.widget.EditText - Email address'), 'abustomi1507@gmail.com', 0)
+Mobile.setText(findTestObject('android.widget.EditText - Email address'), GlobalVariable.email_1, 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue'), 0)
 
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password'), 'Tu4nt0m1', 0)
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password'), GlobalVariable.password, 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (1)'), 0)
 
@@ -40,7 +39,7 @@ Mobile.tap(findTestObject('Object Repository/android.widget.Button - Add new sit
 
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Add self-hosted site'), 0)
 
-Mobile.setText(findTestObject('android.widget.EditText - Site address'), 'tomiAutomation.com', 0)
+Mobile.setText(findTestObject('android.widget.EditText - Site address'), GlobalVariable.sampleBlogAddress, 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (2)'), 0)
 

@@ -22,11 +22,11 @@ Mobile.startApplication(RunConfiguration.getProjectDir() + GlobalVariable.appPat
 
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Log in or sign up with WordPress.com'), 0)
 
-Mobile.setText(findTestObject('android.widget.EditText - Email address'), 'abustomi1507@gmail.com', 0)
+Mobile.setText(findTestObject('android.widget.EditText - Email address'), GlobalVariable.email_1, 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue'), 0)
 
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password'), 'Tu4nt0m1', 0)
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password'), GlobalVariable.password, 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (1)'), 0)
 

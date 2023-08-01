@@ -17,8 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Tomi\\IntelliJIDEAProjects\\MyApplication\\output\\WordPress – Website Builder_22.7_Apkpure.apk', 
-    true)
+Mobile.startApplication(RunConfiguration.getProjectDir() + GlobalVariable.appPath, true)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Enter your existing site address'), 0)
 
