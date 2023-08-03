@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(RunConfiguration.getProjectDir() + GlobalVariable.appPath, true)
-
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Log in or sign up with WordPress.com (1)'), 0)
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email address (1)'), 'wrongemail', 0)
@@ -27,7 +25,4 @@ Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (3
 
 Mobile.getText(findTestObject('Object Repository/android.widget.LinearLayout'), 0)
 
-WebUI.verifyTextPresent('Enter a valid email address', false)
-
-Mobile.closeApplication()
-
+Mobile.verifyElementText(findTestObject('Object Repository/android.widget.TextView - Enter a valid email address'), 'Enter a valid email address')

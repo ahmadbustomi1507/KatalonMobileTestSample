@@ -18,8 +18,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(RunConfiguration.getProjectDir() + GlobalVariable.appPath, true)
-
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Log in or sign up with WordPress.com'), 0)
 
 Mobile.setText(findTestObject('android.widget.EditText - Email address'), GlobalVariable.email_1, 0)

@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(RunConfiguration.getProjectDir() + GlobalVariable.appPath, true)
-
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Log in or sign up with WordPress.com (2)'), 0)
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email address (3)'), 'bustomia@gmail.com', 0)
@@ -27,9 +25,7 @@ Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (6
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Check email'), 0)
 
-WebUI.verifyElementText(findTestObject(null), 'New in Gmail')
+Mobile.verifyElementText(findTestObject('android.widget.TextView - New in Gmail'), 'New in Gmail')
 
-WebUI.verifyElementText(findTestObject(''), 'All the features you love with a fresh new look')
-
-Mobile.closeApplication()
+Mobile.verifyElementText(findTestObject('android.widget.TextView - All the features you love with a fresh new look'), 'All the features you love with a fresh new look')
 

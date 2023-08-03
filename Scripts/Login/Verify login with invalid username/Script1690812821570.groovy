@@ -17,22 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(RunConfiguration.getProjectDir() + GlobalVariable.appPath, true)
-
 Mobile.tap(findTestObject('Object Repository/android.widget.Button'), 0)
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email address (2)'), 'mail@gmail.com', 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (4)'), 0)
 
-Mobile.setText(findTestObject(''), 'testingNewUser', 0)
+Mobile.setText(findTestObject('android.widget.EditText - Username'), 'testingNewUser', 0)
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password (1)'), 'samplePassword123!', 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (5)'), 0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/android.widget.TextView - The username or password you entered is incorrect'), 
+Mobile.verifyElementText(findTestObject('Object Repository/android.widget.TextView - The username or password you entered is incorrect'), 
     'The username or password you entered is incorrect')
-
-Mobile.closeApplication()
 
