@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(RunConfiguration.getProjectDir() + GlobalVariable.appPath, true)
-
 Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Enter your existing site address'), 0)
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Site address (1)'), 'https://samplekatalontomi.wordpress.com/', 
@@ -37,5 +35,4 @@ Mobile.tap(findTestObject('Object Repository/android.widget.Button - Continue (9
 
 WebUI.verifyTextPresent('samplekatalontomi.wordpress.com', false)
 
-Mobile.closeApplication()
 
